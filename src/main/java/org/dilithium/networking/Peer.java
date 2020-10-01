@@ -69,7 +69,7 @@ public class Peer {
 	public void listen() throws IOException {
 		String command;
 		while(true){
-	    		//System.out.println("Listening for commands");
+	    		Log.log(Level.INFO, "Listening for commands...");
 	    		try{
 	    			DataInputStream in = new DataInputStream(this.socket.getInputStream());
         			DataOutputStream out = new DataOutputStream(this.socket.getOutputStream());
